@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Landed by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .project-icon {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1em;
+        }
+        
+        .popup-form {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 2em;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            width: 90%;
+            max-width: 500px;
+        }
+        
+        .popup-form.active {
+            display: block;
+        }
+        
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        
+        .overlay.active {
+            display: block;
+        }
+        
+        .close-btn {
+            position: absolute;
+            right: 1em;
+            top: 1em;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body class="is-preload landing">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html">Landed</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Layouts</a>
+                        <ul>
+                            <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option 1</a></li>
+                                    <li><a href="#">Option 2</a></li>
+                                    <li><a href="#">Option 3</a></li>
+                                    <li><a href="#">Option 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="#" class="button primary">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="content">
+                <header>
+                    <h2>Sofiia Bilyk</h2>
+                    <p>CS & AI & SS @ Minerva | Data Scientist<br /> Based in San Francisco, California, USA</p>
+                </header>
+                <span class="image"><img src="images/pic01.jpg" alt="" /></span>
+            </div>
+            <a href="#three" class="goto-next scrolly">Next</a>
+        </section>
+
+
+        <!-- Three -->
+        <section id="three" class="spotlight style1 bottom">
+            <span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <h2>About Sofiia</h2>
+                        <p> Sofiia began her career at 18, working in Barcelona as a junior data engineer. Her role focused on increasing the KPIs of client organizations by building automation systems that made processes more time- and cost-efficient. This
+                            experience improved her hard and soft skills: while working daily with SQL & Python and expanding her knowledge in BI development, she also learned the importance of well-coordinated teamwork and professional client communication
+                            and support.
+                            <br /> <br /> Sofiia is passionate about solving real-world challenges through technology. A clear example is her internship in Washington, D.C., where she partnered with the World Bank to develop a platform that predicts high-risk
+                            areas vulnerable to natural disasters. Her main contributions included training AI models and developing interactive web maps using satellite data from NASA's open sources. She later applied these skills in the NASA Space Apps
+                            Challenge and built the Urban Growth Platform in partnership with the International Space Alliance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#one" class="goto-next scrolly">Next</a>
+        </section>
+
+
+        <!-- One -->
+        <section id="one" class="spotlight style1 bottom">
+            <span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <!-- <div class="col-4 col-12-medium">
+                            <header>
+                                <h2>About Sofiia</h2>
+                                <p>Sofiia began her career at 18 as a junior data engineer in Barcelona, helping private companies and government institutions improve KPIs through automation systems that boosted efficiency. This role strengthened her technical skills in SQL, Python, and BI development, while also deepening her teamwork and client communication abilities.</p>
+                            </header>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <p>Sofiia is excited about solving real-world challenges using technologies. The proof of that is her internship in Washington D.C., where she partnered with The World Bank, they were developing a platform to predict the high-risk
+                                areas where destruction could be caused by Natural Disasters. Mostly, she contributed to AI models training and Interactive Web Maps development, working with satellite data taken from NASA open sources. Further, she used
+                                these skills to participate in the NASA Space Apps Challenge and develop the Urban Growth Platform in Partnership with the International Space Alliance.</p>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <p>Currently, Sofiia is exploring the intersection of technology and human behavior, focusing on behavior-shaping, emotionality, and decision-making. She is pursuing a double degree in Computer and Social Sciences, studying over
+                                four years in four different regions of the world: North America, Asia, South America, and Europe. Driven by a desire to deeply understand local cultures, she is not only a native Ukrainian speaker but also fluent in English
+                                and Spanish, and is currently learning Japanese. This globally immersive approach enriches her perspective and supports a culturally adaptive professional style.</p>
+                        </div>
+					-->
+                        <p> Currently, Sofiia is exploring the intersection of technology and human behavior, focusing on behavior-shaping, emotionality, and decision-making. She is pursuing a double degree in Computer and Social Sciences, studying over four
+                            years in four different regions of the world: North America, Asia, South America, and Europe (currently in San Francisco, California). Driven by a desire to deeply understand local cultures, she is not only a native Ukrainian
+                            speaker but also fluent in English and Spanish, and is currently learning Japanese. This globally immersive approach enriches her perspective and supports a culturally adaptive professional style.</p>
+
+                    </div>
+                </div>
+            </div>
+            <a href="#two" class="goto-next scrolly">Next</a>
+        </section>
+
+        <!-- Two -->
+        <section id="two" class="spotlight style2 right">
+            <span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+            <div class="content">
+                <header>
+                    <h2>Resume</h2>
+                    <p>Learn more about Sofiia's experience and skills.</p>
+                </header>
+                <!-- <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p> -->
+                <ul class="actions">
+                    <li><a href="https://drive.google.com/file/d/1hAcW2ZTx2wOiCwp7-KAodF_ER0Zp7Xw8/view?usp=sharing" class="button">Learn More</a></li>
+                </ul>
+            </div>
+            <a href="#four" class="goto-next scrolly">Next</a>
+        </section>
+
+
+        <!-- Four -->
+        <section id="four" class="wrapper style1 special fade-up">
+            <div class="container">
+                <header class="major">
+                    <h2>Personal Projects</h2>
+                </header>
+                <div class="box alt">
+                    <div class="row gtr-uniform">
+                        <section class="col-4 col-6-medium col-12-xsmall">
+                            <img src="images/SuperResolution.jpg" alt="Super-Resolution" class="project-icon" />
+                            <h3>Super-Resolution</h3>
+                            <p>Super-resolution model to upscale low-resolution images to high-resolution ones.</p>
+                        </section>
+                        <section class="col-4 col-6-medium col-12-xsmall">
+                            <img src="images/UHI.jpg" alt="Urban Developer" class="project-icon" />
+                            <h3>Urban Developer</h3>
+                            <p>Platform that gives insights into UHI (Urban Heat Island) effects, that helps to plan the urban development.</p>
+                        </section>
+                        <section class="col-4 col-6-medium col-12-xsmall">
+                            <img src="images/UNGoal.jpg" alt="Food Saver" class="project-icon" />
+                            <h3>Food Saver</h3>
+                            <p>The app that helps to reduce food waste by recommending recipes based on the ingredients you have.</p>
+                        </section>
+                    </div>
+                </div>
+                <footer class="major">
+                    <ul class="actions special">
+                        <li><br /><br /><a href="#five" class="goto-next scrolly">Next</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </section>
+
+        <!-- Five -->
+        <section id="five" class="wrapper style2 special fade">
+            <div class="container">
+                <header>
+                    <h2>Let's Connect</h2>
+                    <p>Feel free to reach out for collaborations or opportunities.</p>
+                </header>
+                <button class="button primary" onclick="openForm()">Connect</button>
+            </div>
+        </section>
+
+        <div class="overlay" id="overlay"></div>
+        <div class="popup-form" id="contactForm">
+            <span class="close-btn" onclick="closeForm()">&times;</span>
+            <h3>Contact Me</h3>
+            <form action="https://formspree.io/f/xldbzzly" method="POST">
+                <label style="display:block; color:#222; font-weight:600; margin-bottom:1em;">
+                    Your name:
+                    <input type="text" name="name" required style="display:block; width:100%; margin-top:0.5em;" />
+                </label>
+                <label style="display:block; color:#222; font-weight:600; margin-bottom:1em;">
+                    Your email:
+                    <input type="email" name="email" required style="display:block; width:100%; margin-top:0.5em;" />
+                </label>
+                <label style="display:block; color:#222; font-weight:600; margin-bottom:1em;">
+                    Your message:
+                    <textarea name="message" required style="display:block; width:100%; margin-top:0.5em;"></textarea>
+                </label>
+                <button type="submit" class="button primary">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="https://x.com/SofiiaBilyk" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                <!--<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> 
+            -->
+                <li><a href="https://www.linkedin.com/in/sofia-bilyk/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/SofiiaBilyk" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="mailto:sofiia.bilyk.connect@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <!-- <li>&copy; Untitled. All rights reserved.</li> -->
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function openForm() {
+            document.getElementById('contactForm').classList.add('active');
+            document.getElementById('overlay').classList.add('active');
+        }
+
+        function closeForm() {
+            document.getElementById('contactForm').classList.remove('active');
+            document.getElementById('overlay').classList.remove('active');
+        }
+
+        // Close form when clicking outside
+        document.getElementById('overlay').addEventListener('click', closeForm);
+    </script>
+
+</body>
+
+</html>
